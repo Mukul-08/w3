@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=PT+Serif&family=Special+Elite&display=swap');
+
+   
+ .prename{
+    font-size: 300%;
+    
+ }
+
+  .inputData {
+  padding: 20px;
+  font-size: 90%;
+ 
+  }
+
+  .inputFeild{
+    margin-top: 140px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    height: 80px;
+    width: 50%;
+    font-size: 50px;
+    
+  }
+
+  .inputData input {
+  margin-top: 10px;
+  padding: 20px;
+  width: 200%;
+  outline: none;
+  border: none;
+  font-size: 50px;
+  border-radius: 120px;
+  margin-left: 500px;
+  }
+
+.teal-color {
+  color:  rgba(96, 171, 254, 0.6);
+}
+
+:root {
+  --font-color: #222;
+  --bg-color: #f2f3f7;
+  --button-bg-color: #f2f3f7;
+  --button-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9),
+    5px 5px 8px rgba(0, 0, 0, 0.07);
+  
+}
+
+[data-theme=dark] {
+  --font-color: #fff;
+  --bg-color: #181818;
+  --button-bg-color: #121212;
+  --button-shadow: -2px -2px 4px rgba(255, 255, 255, 0.05),
+    0 0 10px 10px rgba(255, 255, 255, 0.005), 2px 2px 8px rgba(60, 60, 60, 0.1);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 120%;
+  font-family: "Roboto", sans-serif;
+  color: var(--font-color);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+ 
+  height: 100%;
+}
+
+.color-cool {
+  color: #077dfe;
+}
+
+.color-warm {
+  color: #ff7a00;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 25px;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media screen and (min-width: 200px) {
+  .container {
+    flex-direction: row;
+  }
+
+}
+.app-container {
+  background-color: var(--bg-color);
+  box-shadow: -2px -2px 4px 0px #ffffff, 50px 50px 50px 0px rgba(0, 0, 0, 0.25);
+  display: block;
+  flex: 1;
+  min-height: 2300px;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.app-top-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.app-heading {
+  color: var(--font-color);
+  display: block;
+  flex: 1;
+  font-size: 48px;
+  font-weight: 800;
+  /* margin-top: 40px; */
+  text-align: center;
+}
+
+button {
+  border: 0;
+}
+button:focus {
+  border: none;
+  outline: 0 !important;
+  outline-style: none;
+}
+
+.button {
+  color: var(--font-color);
+  position: relative;
+  border-radius: 15px;
+  background: var(--button-bg-color);
+  font-weight: 700;
+  transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: var(--button-shadow);
+  cursor: pointer;
+}
+.button.button-link {
+  color: #067cf8;
+  display: block;
+  font-size: 17px;
+  margin: 30px 0 0;
+  padding: 20px 0;
+  width: 100%;
+}
+.button.button-small {
+  color: #6d6e74;
+  font-size: 22px;
+  line-height: 40px;
+  width: 40%;
+  height: 40px;
+}
+.button.button-large {
+  display: block;
+  font-size: 30px;
+  flex-direction: column;
+  padding: 15px;
+  text-align: left;
+  width: 100%;
+  color: #067cf8;
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+
+.button.button-large svg {
+  margin-bottom: 40px;
+  width: 30px;
+}
+
+.button.button-large1 {
+  display: block;
+  font-size: 30px;
+  flex-direction: column;
+  padding: 15px;
+  text-align: left;
+  width: 100%;
+  color: orange;
+  margin-bottom: 80px;
+  margin-top: 20px;
+  
+}
+.button.button-large1 svg {
+  margin-bottom: 40px;
+  width: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .button.button-large1 {
+    width: 500%;
+ 
+  }
+}
+.button-dial {
+  border-radius: 50%;
+  display: flex;
+  height: 470px;
+  margin: 45px auto;
+  align-items: center;
+  justify-content: center;
+  width: 470px;
+}
+
+.button-dial-top {
+  background: var(--button-bg-color);
+  box-shadow: var(--button-shadow);
+  border-radius: 50%;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  text-align: center;
+  z-index: 5;
+}
+
+.button-dial-label {
+  color: #067cf8;
+  font-size: 78px;
+  fill: #067cf8;
+  position: relative;
+  z-index: 10;
+}
+
+.button-dial-spoke {
+  background-color: rgba(96, 171, 254, 0.6);
+  display: block;
+  height: 6px;
+  width: 83%;
+  position: absolute;
+  margin: 0 auto;
+  z-index: 5;
+  top: 50%;
+}
+.button-dial-spoke:nth-child(2) {
+  transform: rotate(30deg);
+}
+.button-dial-spoke:nth-child(3) {
+  transform: rotate(60deg);
+}
+.button-dial-spoke:nth-child(4) {
+  transform: rotate(90deg);
+}
+.button-dial-spoke:nth-child(5) {
+  transform: rotate(120deg);
+}
+.button-dial-spoke:nth-child(6) {
+  transform: rotate(150deg);
+}
+
+
+
+.button-block {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 24px;
+  width: 100%;
+}
+.button-block span {
+  font-size: 16px;
+}
+
+.subtle {
+  color: #6d6e74;
+}
+
+.flex-button-container {
+  display: block;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.app-content{
+  text-align: center;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+.prename{
+    font-size: 200%;
+ }
+
+  .inputData {
+  padding: 20px;
+  font-size: 50%;
+ 
+  }
+
+  .inputFeild{
+    margin-top: 40px;
+    border-radius: 5px;
+    height: 45px;
+    width: 30%;
+    font-size: 20px;
+  }
+
+  .inputData input {
+  margin-top: 10px;
+  padding: 20px;
+  width: 200%;
+  outline: none;
+  border: none;
+  font-size: 50px;
+  border-radius: 120px;
+  margin-left: 500px;
+  }
+
+.teal-color {
+  color:  rgba(96, 171, 254, 0.6);
+}
+
+:root {
+  --font-color: #222;
+  --bg-color: #f2f3f7;
+  --button-bg-color: #f2f3f7;
+  --button-shadow: -6px -6px 8px rgba(255, 255, 255, 0.9),
+    5px 5px 8px rgba(0, 0, 0, 0.07);
+  
+}
+
+[data-theme=dark] {
+  --font-color: #fff;
+  --bg-color: #181818;
+  --button-bg-color: #121212;
+  --button-shadow: -2px -2px 4px rgba(255, 255, 255, 0.05),
+    0 0 10px 10px rgba(255, 255, 255, 0.005), 2px 2px 8px rgba(60, 60, 60, 0.1);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 120%;
+  font-family: "Roboto", sans-serif;
+  color: var(--font-color);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+ 
+  height: 100%;
+}
+
+.color-cool {
+  color: #077dfe;
+}
+
+.color-warm {
+  color: #ff7a00;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 25px;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media screen and (min-width: 300px) {
+  .container {
+    flex-direction: row;
+  }
+
+}
+.app-container {
+  background-color: var(--bg-color);
+  box-shadow: -2px -2px 4px 0px #ffffff, 50px 50px 50px 0px rgba(0, 0, 0, 0.25);
+  display: block;
+  flex: 1;
+  min-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.app-top-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.app-heading {
+  color: var(--font-color);
+  display: block;
+  flex: 1;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+  text-align: center;
+}
+
+button {
+  border: 0;
+}
+button:focus {
+  border: none;
+  outline: 0 !important;
+  outline-style: none;
+}
+
+.button {
+  color: var(--font-color);
+  position: relative;
+  border-radius: 15px;
+  background: var(--button-bg-color);
+  font-weight: 700;
+  transition: all 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: var(--button-shadow);
+  cursor: pointer;
+}
+.button.button-link {
+  color: #067cf8;
+  display: block;
+  font-size: 17px;
+  margin: 30px 0 0;
+  padding: 20px 0;
+  width: 100%;
+}
+.button.button-small {
+  color: #6d6e74;
+  font-size: 22px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+}
+.button.button-large {
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  padding: 15px;
+  text-align: left;
+  width: 45%;
+  color: #067cf8;
+
+}
+.button.button-large svg {
+  margin-bottom: 40px;
+  width: 30px;
+}
+
+.button.button-large1 {
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  padding: 15px;
+  text-align: left;
+  width: 45%;
+  color: orange;
+}
+.button.button-large1 svg {
+  margin-bottom: 40px;
+  width: 30px;
+}
+
+.button-dial {
+  border-radius: 50%;
+  display: flex;
+  height: 270px;
+  margin: 35px auto;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+}
+
+.button-dial-top {
+  background: var(--button-bg-color);
+  box-shadow: var(--button-shadow);
+  border-radius: 50%;
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  text-align: center;
+  z-index: 5;
+}
+
+.button-dial-label {
+  color: #067cf8;
+  font-size: 28px;
+  fill: #067cf8;
+  position: relative;
+  z-index: 10;
+}
+
+.button-dial-spoke {
+  background-color: rgba(96, 171, 254, 0.6);
+  display: block;
+  height: 2px;
+  width: 83%;
+  position: absolute;
+  margin: 0 auto;
+  z-index: 5;
+  top: 50%;
+}
+.button-dial-spoke:nth-child(2) {
+  transform: rotate(30deg);
+}
+.button-dial-spoke:nth-child(3) {
+  transform: rotate(60deg);
+}
+.button-dial-spoke:nth-child(4) {
+  transform: rotate(90deg);
+}
+.button-dial-spoke:nth-child(5) {
+  transform: rotate(120deg);
+}
+.button-dial-spoke:nth-child(6) {
+  transform: rotate(150deg);
+}
+
+.button-block {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 24px;
+  width: 100%;
+}
+.button-block span {
+  font-size: 16px;
+}
+
+.subtle {
+  color: #6d6e74;
+}
+
+.flex-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.app-content{
+  text-align: center;
+}
+
+}
